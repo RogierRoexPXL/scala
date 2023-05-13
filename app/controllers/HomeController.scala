@@ -19,6 +19,22 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
    * a path of `/`.
    */
   def index() = Action { implicit request: Request[AnyContent] =>
+    val title = "Home"
     Ok(views.html.index())
+  }
+
+  def electron() = Action { implicit request: Request[AnyContent] =>
+    val title = "Electron"
+    Ok(views.html.electron())
+  }
+
+  def rust() = Action { implicit request: Request[AnyContent] =>
+    val title = "Rust"
+    Ok(views.html.rust())
+  }
+
+  def scala() = Action { implicit request: Request[AnyContent] =>
+    val title = "Scala"
+    Ok(views.html.scala())
   }
 }
