@@ -1,39 +1,18 @@
+@import views.html.components.paragraph
+@import views.html.components.jumbotron
 @()
 
-@main("Electron") {
+@main("PXL iTalent") {
     <div class="container">
-        <div class="jumbotron text-center">
-            <h1>Electron!</h1>
-            <p class="lead">Electron</p>
-        </div>
+        @jumbotron("Electron!", "Electron")
 
         <div class="row">
-            <div class="col-md-6">
-                <h2>About Electron</h2>
-                <p>
-                    Electron is a ..........
-                </p>
-                <p>
-                    With Electron, you can ..........
-                </p>
-                <p>
-                    Explore the Electron documentation to learn more about its features and how to get started
-                    with building your own desktop applications.
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <h2>Get Started</h2>
-                <p>
-                    To get started with Electron, you can follow the official Electron documentation and tutorials.
-                    They provide step-by-step instructions on setting up your development environment,
-                    creating routes, controllers, and views, and deploying your application.
-                </p>
-                <p>
-                    Start exploring the possibilities of Electron and unleash your creativity in building
-                    amazing desktop applications with Electron and Node.js!
-                </p>
-            </div>
+            @paragraph("About Electron",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
+            @paragraph("Get Started",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
         </div>
     </div>
 }

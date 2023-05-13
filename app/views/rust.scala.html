@@ -1,39 +1,18 @@
+@import views.html.components.paragraph
+@import views.html.components.jumbotron
 @()
 
-@main("Rust") {
+@main("PXL iTalent") {
     <div class="container">
-        <div class="jumbotron text-center">
-            <h1>Rust!</h1>
-            <p class="lead">Rust</p>
-        </div>
+        @jumbotron("Rust!", "Rust")
 
         <div class="row">
-            <div class="col-md-6">
-                <h2>About Rust</h2>
-                <p>
-                    Rust is a ................
-                </p>
-                <p>
-                    With Rust, you can ..........
-                </p>
-                <p>
-                    Explore the Rust documentation to learn more about its features and how to get started
-                    with building your ..............
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <h2>Get Started</h2>
-                <p>
-                    To get started with Rust, you can follow the official Rust documentation and tutorials.
-                    They provide step-by-step instructions on setting up your development environment,
-                    creating routes, controllers, and views, and deploying your application.
-                </p>
-                <p>
-                    Start exploring the possibilities of Rust and unleash your creativity in building
-                    amazing applications with Rust!
-                </p>
-            </div>
+            @paragraph("About Rust",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
+            @paragraph("Get Started",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
+                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
         </div>
     </div>
 }
