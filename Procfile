@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/italent-web -Dhttp.port=${PORT}
