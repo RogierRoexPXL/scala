@@ -37,4 +37,14 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     val title = "Scala"
     Ok(views.html.scala())
   }
+
+  def devops() = Action { implicit request: Request[AnyContent] =>
+    val title = "DevOps"
+    Ok(views.html.devops())
+  }
+
+  def eindreflectie() = Action { implicit request: Request[AnyContent] =>
+    val title = "Eindreflectie"
+    Ok(views.html.eindreflectie())
+  }
 }

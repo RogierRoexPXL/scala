@@ -1,0 +1,58 @@
+@import views.html.components.paragraph
+@import views.html.components.jumbotron
+@()
+
+@main("PXL iTalent") {
+    <div class="container">
+        @jumbotron("DevOps!", "Overige iTalent activiteiten")
+
+        <div class="row">
+            <div class="col-md-6"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/devops1.jpg")" alt="Screenshot folder"></div>
+
+
+            @paragraph("About Devops",
+                "Voor dit onderdeel heb ik twee zaken uitgevoerd. Dit is vanuit een werkelijke interesse in Devops. Allereerst heb ik een seminarie bijgewoont in s'Hertogenbosch (NL) en ten tweede heb ik gedurende de zomer van " +
+                        "2022 het boek 'The Phoenix Project' gelezen. Dit boek is een gevestigde waarde in de wereld van devops en een goede manier om op verhalende wijze kennis te maken met devops. " +
+                "Het boek is verhalend opgesteld en zet het hoofdpersonage voor een enorme taak, welke hij stap voor stap oplost door devops toe te passen. Een absolute aanrader!",
+                "Het seminarie heb ik bijgewoont met een aantal vrienden die ook software engineering studenten zijn in Nederland. Het was een enorm interessante lezing met veel nieuwe inzichten. " +
+                        "We hebben op school natuurlijk ook al veel gezien en gehoord over DevOps, maar deze lezing ging toch wel wat verder. Er werd gesuggereerd dat de wereld van Devops namelijk erg snel beweegt. " +
+                        " Zo werd er gesproken over Devops, en nu over DevSecOps. Maar die term is ook al wat verouderd, want de voorlopers zijn nu al bezig met GitOps. Hierbij zijn dus én de operations én de security én de pull-requests geautomatiseerd. " +
+                        "Dit is zeker interessant, want uiteindelijk is het doel van Devops namelijk om waarde te creëren in het productieproces, en dus zo veel mogelijk een einde te maken aan bottlenecks zoals codereviews."
+            )
+        </div>
+        <div></div>
+        <hr class="my-4"/>
+        <div class="row">
+            @paragraph("Reflectie",
+                "De thema's hier zijn met name theoretisch van aard. Devops is geen technologie, maar een attitude. Ik heb absoluut als doel om een Devops-minded mens te worden / zijn. " +
+                "Ik heb het voor mijn gevoel ook al toegepast tijdens vorig semester, waar ik door groepsgenoten wel als scrummaster werd gezien en degene was die de devops-pipeline in GitHub Actions heeft opgezet en onderhouden.",
+                "Hoewel ik voor dit onderdeel geen Proof of Concept heb, wilde ik het toch meenemen voor de eindevaluatie. Het was erg leuk om een seminarie bij te wonen en zodra ik " +
+                        "weer tijd heb voor leuke dingen ben ik van plan dit veel vaker te gaan doen!"
+            )
+            @paragraph("Bewijzen",
+                "De bewijzen zijn hier te vinden de plaatjes onderaan de pagina.",
+                "Het betreft foto's en screenshots van uitnodigingen, van het boek en de factuur van het boek (de boeken) op bol.com. Overigens is Accelerate óók een heel boeiend boek over devops, maar hier ben ik nog niet aan toegekomen!"
+            )
+        </div>
+
+        <hr class="my-4"/>
+
+        <div class="row mt-3 align-items-center">
+            <div class="col-md-3"><h3>Factuur boek(en)</h3> </div>
+            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/devops4.png")" alt="Factuur boek(en)"></div>
+        </div>
+
+        <hr class="my-4"/>
+
+        <div class="row m-3 align-items-center">
+            <div class="col-md-6">
+                <h3>Invitation Generation Devops</h3>
+                <img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/devops2.jpg")" alt="Screenshot folder">
+            </div>
+            <div class="col-md-6">
+                <h3>The Phoenix Project</h3>
+                <img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/devops3.jpg")" alt="Screenshot folder">
+            </div>
+        </div>
+    </div>
+}
