@@ -8,18 +8,12 @@
 
 
         <div class="row">
-            @paragraph("Reflectie",
-                "Voor de tweede opdracht was het doel om een API te bouwen voor de Electron-applicatie. In Rust heb ik een API gebouwd die communiceert naar een MySQL database. In de repository is alles voorzien om het zelf uit te proberen. De repo bevat " +
-                "een DockerFile en docker-compose.yml om een container op te starten met de juiste databasetabellen. Alle CRUD-operaties zijn voorzien in de API.",
-                "Ik ben erg fier dat het gelukt is om de API te bouwen in Rust. Het was geen gemakkelijke taal om te leren. Achteraf gezien is Rust waarschijnlijk gericht op andere toepassingen, zoals IOT-devices waarbij het belangrijk is om op geheugen te letten. " +
-                        "Desondanks ben ik tevreden met het leerproces en de oplossing. Toch zou ik in de toekomst kiezen om een API in een andere taal te bouwen. Rust zal qua performantie uitblinken, maar qua developer-efficiency zijn er veel betere alternatieven op de markt. Ik heb er " +
-                        " namelijk toch tamelijk lang over gedaan om tot een redelijke kleine API te komen. Ik denk dat ik dit in Java of zelfs met Node een stuk sneller had kunnen doen."
-            )
+            <div class="col-md-6"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/rustacean.webp")" alt="Gif Showing Electron App"></div>
             @paragraph("About Rust",
                 "Rust is een systeemprogrammeertaal die zich richt op prestaties, betrouwbaarheid en veiligheid. Het is ontwikkeld door Mozilla en voor het eerst uitgebracht in 2010. Rust biedt een praktisch alternatief voor talen zoals C en C++ door een veiligere en productievere ontwikkelervaring te bieden. ",
                 "Een van de belangrijkste redenen waarom ontwikkelaars voor Rust kiezen, is de focus op veiligheid en betrouwbaarheid. Door strikte compile-time controles te bieden, helpt Rust om fouten in de code te voorkomen die tot beveiligingsproblemen of crashes kunnen leiden. " +
-                        "Een opvallend kenmerk van Rust is dat velden standard 'immutable'. Om een veld mutable te maken, is het keyword 'mut' nodig. In de meeste talen is dit andersom, en dat kenmerkt het karakter van Rust om programmeerfouten te voorkomen. Er is een sterk bewustzijn van levensduur van variabelen nodig bij het programmeren in Rust. " +
-                        "Rust heeft namelijk geen 'Garbage collection'. In plaats daarvan maakt Rust gebruik van 'ownership' en 'lifetimes' om geheugenbeheer op een veilige manier te beheren."
+                        "Een opvallend kenmerk van Rust is dat velden standard 'immutable' zijn. Om een veld mutable te maken, is het keyword 'mut' nodig. In de meeste talen is dit andersom, en dat kenmerkt het karakter van Rust om programmeerfouten te voorkomen. Er is een sterk bewustzijn van levensduur van variabelen nodig bij het programmeren in Rust. " +
+                        "Rust heeft namelijk geen 'Garbage collection'. In plaats daarvan maakt Rust gebruik van 'ownership' en 'lifetimes' voor een veilig geheugenbeheer."
             )
         </div>
 
@@ -29,22 +23,35 @@
             @paragraph("X-factor",
                 "Ook dit project ben ik gestart om me niet te beperken tot Java. Java is een high-level programmeer taal, en ik wilde een low-level taal uitproberen. Het was erg cool om dit te doen, en nu ik de taal ken mag ik mijzelf kronen tot 'Rustacean'!",
                 "De Rust community is een zeer actieve wereldwijde community die enorm gepassioneerd is door Rust. Ze staan bekend als 'Rustaceans'. Het wordt gezien als een grote tegenhanger van C, maar op de het moment dat ik erin stapte was er duidelijk veel tumult in de community. " +
-                        "Met het oog op het onderdeel 'internationale samenwerking', wilde ik dit toch noemen. Ik heb actief de discussies en nieuwsberichten rond dit thema gevolgd. De Rust Foundation wilt de Trademark policty aanpassen wat leidt tot enorm discussies. "
+                        "Met het oog op het onderdeel 'internationale samenwerking', wilde ik dit toch noemen. Ik heb actief de discussies en nieuwsberichten rond dit thema gevolgd. De Rust Foundation wilt de Trademark policy aanpassen wat leidt tot enorm discussies. " +
+                        "Meer informatie hierover is te vinden in de reddit-link onder 'Bewijzen'."
             )
-            @paragraph("Bewijzen",
-                "https://github.com/RogierRoexPXL/rust-api   https://www.reddit.com/r/rust/comments/12e7tdb/rust_trademark_policy_feedback_form/",
-                "In de git-repo vindt u mijn commit-historie. Het proces begon op 27-maart met de tutorial, zoals u kunt zien in de screenshot van mijn folder die de hello-world code bevat.")
+            @paragraph("Reflectie",
+                "Voor de tweede opdracht was het doel om een API te bouwen voor de Electron-applicatie. In Rust heb ik een API gebouwd die communiceert naar een Postgresql database. In de repository is alles voorzien om het zelf uit te proberen. De repo bevat " +
+                        "een DockerFile en docker-compose.yml om de containers voor de api en de database op te starten met de juiste databasetabellen. Alle CRUD-operaties zijn voorzien in de API.",
+                "Ik ben erg fier dat het gelukt is om de API te bouwen in Rust. Het was geen gemakkelijke taal om te leren. Achteraf gezien is Rust waarschijnlijk gericht op andere toepassingen, zoals IOT-devices waarbij het belangrijk is om op geheugen te letten. " +
+                        "Desondanks ben ik tevreden met het leerproces en de oplossing. Toch zou ik in de toekomst kiezen om een API in een andere taal te bouwen. Rust zal qua performantie uitblinken, maar qua developer-efficiency zijn er veel betere alternatieven op de markt. Ik heb er " +
+                        " namelijk toch tamelijk lang over gedaan om tot een redelijke kleine API te komen. Ik denk dat ik dit in Java of zelfs met Node een stuk sneller had kunnen doen."
+            )
         </div>
 
         <hr class="my-4"/>
 
         <div class="row mt-3 align-items-center">
-            <div class="col-md-3"><h3>Rustacean</h3> </div>
-            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/rustacean.webp")" alt="Gif Showing Electron App"></div>
+            @paragraph("Bewijzen",
+                "https://github.com/RogierRoexPXL/rust-api   https://www.reddit.com/r/rust/comments/12e7tdb/rust_trademark_policy_feedback_form/",
+                "In de git-repo vindt u mijn commit-historie. Het proces begon op 27-maart met de tutorial, zoals u kunt zien in de screenshot van mijn folder die de hello-world code bevat.")
+            <div class="col-md-6"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/rust.png")" alt="Screenshot folder"></div>
         </div>
+
         <div class="row mt-3 align-items-center">
-            <div class="col-md-3"><h3>Tutorial folder</h3> </div>
-            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/rust.png")" alt="Screenshot folder"></div>
+            <div class="col-md-3"><h3>Docker Desktop</h3> </div>
+            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/rust2.png")" alt="Screenshot folder"></div>
+        </div>
+
+        <div class="row mt-3 mb-5 align-items-center">
+            <div class="col-md-3"><h3>Postman testing</h3> </div>
+            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/rust.gif")" alt="Screenshot folder"></div>
         </div>
     </div>
 }
