@@ -10,36 +10,41 @@
 <html lang="en">
     <head>
         @* Here's where we render the page title `String`. *@
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
 
     </head>
     <body class="bg-light">
         @* And here's where we render the `Html` object containing
         * the page content. *@
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 border">
-            <a class="navbar-brand" href="#">PXL iTalent - Rogier Roex</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link @if(title == "Home") {active}" href="@routes.HomeController.index()">Home</a>
-                    <a class="nav-item nav-link @if(title == "Electron") {active}" href="@routes.HomeController.electron()">Electron</a>
-                    <a class="nav-item nav-link @if(title == "Rust") {active}" href="@routes.HomeController.rust()">Rust</a>
-                    <a class="nav-item nav-link @if(title == "Scala") {active}" href="@routes.HomeController.scala()">Scala</a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2 border">
+        <a class="navbar-brand" href="#">PXL iTalent - Rogier Roex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link @if(title == "Home") {active}" href="@routes.HomeController.index()">Home</a>
+                <a class="nav-item nav-link @if(title == "Electron") {active}" href="@routes.HomeController.electron()">Electron</a>
+                <a class="nav-item nav-link @if(title == "Rust") {active}" href="@routes.HomeController.rust()">Rust</a>
+                <a class="nav-item nav-link @if(title == "Scala") {active}" href="@routes.HomeController.scala()">Scala</a>
             </div>
-            <button id="changeColorButton" class="btn btn-danger">bg-color</button>
-        </nav>
+        </div>
+        <button id="changeColorButton" class="btn btn-danger">bg-color</button>
+    </nav>
 
         @content
 
-        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/jquery.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/bootstrap.bundle.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/jquery.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.bundle.min.js")" type="text/javascript"></script>
 
+    <footer class="bg-dark text-center text-white text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright: PXL iTalent - Rogier Roex. All rights reserved.
+        </div>
+    </footer>
     </body>
 </html>

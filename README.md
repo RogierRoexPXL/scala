@@ -1,5 +1,10 @@
+Run deze applicatie dmv:
+
+``sbt run``
+
+let op: Java 11 required voor Scale. Is jouw JAVA_HOME een hogere versie staat? Installeer Java 11 en gebruik: 
+
+``sbt run -java-home "\path\to\jdk-11.x.x\"``
 
 
-
-Rogier, verwijder... maar voor nu wel ff handig: 
-sbt run -java-home "C:\Program Files\Java\jdk-11.0.2\"
+Open de browser en ga naar localhost:9000

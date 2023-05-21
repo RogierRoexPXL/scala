@@ -8,11 +8,41 @@
 
         <div class="row">
             @paragraph("About Electron",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
-            @paragraph("Get Started",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
+                "Electron is een open source framework dat is ontwikkeld door Github. Het maakt het mogelijk om een desktop applicatie te onwikkeleken met web technologieën zoals " +
+                "HTML, CSS, JavaScript, Angular, React etc. Het leek mij om deze reden een zeer interessante optie om een uit te proberen.",
+                "Electron werkt door Chromium en Node.js te combineren tot één runtime om desktop applicaties te kunnen bouwen. Veel bekende applicaties zijn gebouwd met deze technologie, "+
+                "waaronder Microsoft Teams, Discord, Dropbox, Postman, Twitch, Trello, Slack en VS Code. "
+            )
+            @paragraph("Reflectie",
+                "Omdat ik voor het eerst met deze technologie werk, ben ik gestart met een tutorial. Hoewel de tutorial goed te volgen en zeer leerzaam was, kwam ik direct in de problemen. " +
+                "Zoals veel webapplicaties, werkt ook Electron met Node. De tutorial was 3 jaar oud en gebruikte andere versies van dependencies dan ik... vrijwel alles dat ik wilde nabouwen werkte niet en " +
+                "uiteindelijk gaf ik het op. Ik heb de git-repo van de tutorial gedownload en dat werkte prima. Heel vervelend! Zodra ik startte aan mijn eigen applicatie, wist ik dus dat het erg " +
+                "belangrijk is om te zorgen dat ik voorzichtig ben met het importeren van dependencies en moet zorgen dat ze met elkaar kunnen samenwerken. In de package.json kun je ook zien dat er nog maar 2 dependencies zijn ingeladen, buiten Electron zelf. Dit is een bewuste keuze.",
+                "Toch is het gelukt om een mooie applicatie te bouwen. Javascript is, na Python, de populairste programmeertaal. Het kunnen toepassen van JS om een desktopapplicatie te bouwen is dus enorm leuk. In de toekomst zou ik graag verder gaan en proberen Angular te gebruiken in Electron.")
         </div>
+
+        <hr class="my-4"/>
+
+        <div class="row">
+            @paragraph("X-factor",
+                "Ik ben sinds kort een professionele Java-developer. Om me niet te beperken tot java, heb ik met dit project een innovatieve hoek willen inslaan om mijzelf te blijven ontwikkelen buiten mijn professionele domein.",
+                "Deze applicatie is gebouwd om uit te groeien tot een tool om je huishoudelijke financiën bij te houden. Mijn vrouw is accountant en helpt mij met de requirements op te stellen. In de App kun je nu nog niet veel, maar wel een excel-sheet inladen en transacties opslaan en aanpassen met CRUD-operaties. Deze operaties zijn beschikbaar vanuit het tweede RUST-project van iTalent (een API)."
+            )
+            @paragraph("Bewijzen",
+                "https://github.com/RogierRoexPXL/electron-app",
+                "In de git-repo vindt u mijn commit-historie. Het proces begon op 22-maart met de tutorial, zoals u kunt zien in de screenshot van mijn folder die de tutorial code bevat.")
+        </div>
+
+        <hr class="my-4"/>
+
+        <div class="row mt-3 align-items-center">
+            <div class="col-md-3"><h3>The iCountant desktop app</h3> </div>
+            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/electron.gif")" alt="Gif Showing Electron App"></div>
+        </div>
+        <div class="row mt-3 align-items-center">
+            <div class="col-md-3"><h3>Tutorial folder</h3> </div>
+            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/electron.jpg")" alt="Screenshot folder"></div>
+        </div>
+
     </div>
 }

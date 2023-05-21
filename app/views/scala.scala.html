@@ -7,12 +7,34 @@
         @jumbotron("Scala!", "Scala")
 
         <div class="row">
+            @paragraph("X-factor",
+                "Ik heb eind april gesproken met een Colombiaanse vriend. Hij werkt voor Adyen in Amsterdam en is een senior Java Developer. Hij vertelde mij over Scala en ik wist direct dat ik dit ook moest uitproberen.",
+                ""
+            )
+
             @paragraph("About Scala",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
-            @paragraph("Get Started",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor",
-                "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor")
+                "Scala biedt de flexibiliteit en expressiviteit van functioneel programmeren, samen met de interoperabiliteit en het uitgebreide ecosysteem van Java. Het is een krachtige en moderne programmeertaal die geschikt is voor zowel kleine als grote projecten.",
+                "Je kunt de verschillen direct merken. Het bouwen van een POJO (Plain old java object) is veel gemakkelijker om dat de getters en setters geïmpliceerd zijn. Deze hoeven dus niet apart gecodeerd te worden - wat weer enorm veel regels code scheelt. " +
+                        " Mijn applicatie is deze website gebouwd met het Play-framework van Scala. Als laatste uitdaging heb ik de webapplicatie online beschikbaar gesteld."
+            )
+        </div>
+        <hr class="my-4"/>
+        <div class="row">
+            @paragraph("Reflectie",
+                "Met deze opdracht wilde ik opnieuw een nieuwe technologie gaan leren. Scala was een hele leuke aanvulling op mijn bestaande Java kennis. Maar uiteindelijk beperkt de code zich tot een frontend / website. " +
+                "Het was echt een genot om met dit framework een website te bouwen. Het maken van herbruikbare componenten is erg simpel, ik ben zeker gecharmeerd door dit framework.",
+                "In de homeController staat Scala code, en deze wordt aangeroepen in de frontend om tussen pagina's te navigeren. Ook dit is erg simpel ingebouwd in dit framework. Ik vond het echt leuk en leerzaam!"
+            )
+            @paragraph("Bewijzen",
+                "https://github.com/RogierRoexPXL/scala",
+                "In de git-repo vindt u mijn commit-historie. Het proces begon op 12-mei met de tutorial, zoals u kunt zien in de screenshot van mijn folder die de hello-world code bevat.")
+        </div>
+
+        <hr class="my-4"/>
+
+        <div class="row mt-3 align-items-center">
+            <div class="col-md-3"><h3>Tutorial folder</h3> </div>
+            <div class="col-md-9"><img class="img-fluid rounded shadow" src="@routes.Assets.versioned("images/scala.png")" alt="Screenshot folder"></div>
         </div>
     </div>
 }
